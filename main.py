@@ -1,5 +1,6 @@
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
+from datetime import date
 import sys
 import time
 
@@ -19,7 +20,7 @@ button.click()
 S = lambda l: driver.execute_script('return document.body.parentNode.scroll'+l)
 driver.set_window_size(S('Width'),S('Height')) 
 time.sleep(3)                                                                                                         
-driver.find_element_by_tag_name('body').screenshot('web_screenshot.png')
+driver.find_element_by_tag_name('body').screenshot('lastfm_'+date.today().strftime("%Y %m %d") +'.png')
 
 
 driver.quit()

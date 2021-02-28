@@ -1,5 +1,5 @@
 # lastweekinmusic
-Gets last week in music from lastfm.
+Makes a screenshot of the last week in music page in lastfm.
 
 Needs ChromeDriver executable in the same folder as main.py to work.
 
